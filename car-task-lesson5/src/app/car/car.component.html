@@ -1,0 +1,22 @@
+<div>
+    <select 
+    [(ngModel)]="selectedOption"
+    (change)="sortTable($event.target.value);">
+        <option *ngFor="let opt of options">{{opt}}</option>
+    </select>
+
+    <table>
+        <tr>
+            <th>manufacturer</th>
+            <th>model</th>
+            <th>price</th>
+            <th>wiki</th>
+        </tr>
+        <tr *ngFor="let c of cars">
+            <td>{{c.manufacturer}}</td>
+            <td>{{c.model}}</td>
+            <td>{{c.price}}</td>
+            <td>{{c.wiki}}</td>
+        </tr>
+    </table>
+</div>

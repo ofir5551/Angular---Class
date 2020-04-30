@@ -1,0 +1,10 @@
+<div>
+  <input 
+  type="text"
+  [(ngModel)]="newName" />
+  <button (click)="saveName()">Save</button>
+
+  <ul>
+    <li *ngFor="let n of names">{{n}}</li>
+  </ul>
+</div>

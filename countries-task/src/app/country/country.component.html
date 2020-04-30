@@ -1,0 +1,12 @@
+<div>
+    <h1>{{countryInfo.name}}</h1>
+    <p>currencies: </p>
+    <ul>
+        <li *ngFor="let currency of countryInfo.currencies">
+            <p>code: {{currency.code}}</p>
+            <p>name: {{currency.name}}</p>
+            <p>symbol: {{currency.symbol}}</p>
+        </li>
+    </ul>
+    <img src="{{countryInfo.flag}}">
+</div>
